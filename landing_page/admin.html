@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>รายการสั่งซื้อ — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* table styling for this page only */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); }
+    #ordersTable { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 0.92rem; }
+    #ordersTable th {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-align: left;
+      color: var(--ink-soft);
+      background: var(--bg-cream);
+      border-bottom: 1px solid var(--line-strong);
+      padding: 1rem;
+      white-space: nowrap;
+    }
+    #ordersTable td {
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      color: var(--ink);
+    }
+    #ordersTable tbody tr:last-child td { border-bottom: 0; }
+    #ordersTable tbody tr:hover { background: var(--bg-cream); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Body Scent</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Admin</span>
+          <h2>รายการสั่งซื้อ</h2>
+          <p class="lead">เรียงจากรายการล่าสุดขึ้นก่อน</p>
+          <hr class="divider">
+        </div>
+
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>วันเวลา</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร/Line</th>
+                <th>รายการสินค้า</th>
+                <th>จำนวนเงินรวม</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody> <!-- filled by script.js -->
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

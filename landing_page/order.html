@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อ — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Order</span>
+          <h2>สั่งซื้อสินค้า</h2>
+          <p class="lead">กรอกข้อมูลของคุณ แล้วกดยืนยันการสั่งซื้อ</p>
+          <hr class="divider">
+        </div>
+
+        <!-- Submission is handled by script.js -->
+        <form id="orderForm" class="form">
+          <div class="form-group">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" autocomplete="tel" required>
+          </div>
+
+          <div class="form-group">
+            <label for="items">รายการสินค้า</label>
+            <textarea id="items" name="items" rows="2" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="number" id="total" name="total" min="0" step="any" inputmode="decimal" required>
+          </div>
+
+          <div class="form-group">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" rows="3"></textarea>
+          </div>
+
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn--solid">ยืนยันสั่งซื้อ</button>
+          </div>
+
+          <p class="form-status"><a href="product.html">&larr; กลับไปเลือกสินค้า</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">Body Scent</span>
+      <p class="copy">&copy; 2026 Body Scent. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

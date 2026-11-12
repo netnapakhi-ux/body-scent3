@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Body Scent — น้ำหอมฉีดตัวและโรลออน</title>
+  <meta name="description" content="Body Scent เติมเต็มตัวตนและเปลี่ยนทุกอารมณ์ของคุณให้พิเศษขึ้น ด้วยกลิ่นหอมที่ออกแบบมาเพื่อทุกจังหวะของวัน">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* page-specific touches only; the theme itself lives in style.css */
+    .hero--full {
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+    }
+    .hero--full h1 { max-width: 18em; margin-left: auto; margin-right: auto; }
+    .mood-card { text-align: left; }
+    .mood-card h3 { margin-top: var(--space-1); }
+    .mood-card p { font-size: 0.9rem; line-height: 1.8; flex: 1; }
+    .mood-card__more {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      margin-top: var(--space-2);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero hero--full">
+      <div class="container">
+        <span class="eyebrow">Body Scent</span>
+        <h1>เติมเต็มตัวตนและเปลี่ยนทุกอารมณ์ของคุณให้พิเศษขึ้น</h1>
+        <p class="lead">ด้วยกลิ่นหอมที่ออกแบบมาเพื่อทุกจังหวะของวัน</p>
+        <div class="hero-actions">
+          <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moods -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Choose your mood</span>
+          <h2>เลือกกลิ่นตามอารมณ์ของคุณ</h2>
+          <hr class="divider">
+        </div>
+
+        <div class="product-grid">
+          <a class="product-card mood-card mood-fresh" href="product.html?mood=fresh">
+            <span class="mood-tag">Fresh</span>
+            <h3>สดชื่น</h3>
+            <span class="mood-line"></span>
+            <p>ปลุกความตื่นตัวให้พร้อมรับวันใหม่ด้วยกลิ่นหอมโปร่ง สะอาด และเบาสบาย เหมือนสายลมอ่อนๆ ที่พัดผ่านผิวในเช้าที่อากาศแจ่มใส</p>
+            <span class="mood-card__more">ดูสินค้า</span>
+          </a>
+
+          <a class="product-card mood-card mood-sweet" href="product.html?mood=sweet">
+            <span class="mood-tag">Sweet</span>
+            <h3>หวานละมุน</h3>
+            <span class="mood-line"></span>
+            <p>สัมผัสความอ่อนโยน น่ารัก และอบอุ่นใจไปกับความหวานที่แผ่วเบากำลังดี ช่วยเติมความสดใสให้วันธรรมดาดูน่าเอ็นดูยิ่งขึ้น</p>
+            <span class="mood-card__more">ดูสินค้า</span>
+          </a>
+
+          <a class="product-card mood-card mood-confident" href="product.html?mood=confident">
+            <span class="mood-tag">Confident</span>
+            <h3>มั่นใจ</h3>
+            <span class="mood-line"></span>
+            <p>เสริมลุคให้ดูนิ่ง สะอาด และมีรสนิยม ด้วยกลิ่นหอมที่สร้างความน่าเชื่อถือ พร้อมให้คุณก้าวออกไปพบปะผู้คนได้อย่างเต็มที่ในทุกสถานการณ์</p>
+            <span class="mood-card__more">ดูสินค้า</span>
+          </a>
+
+          <a class="product-card mood-card mood-romance" href="product.html?mood=romance">
+            <span class="mood-tag">Romance</span>
+            <h3>โรแมนติก</h3>
+            <span class="mood-line"></span>
+            <p>เสน่ห์ความหอมที่อบอุ่น น่าหลงใหล และชวนให้จดจำ มอบมิติความหวานที่ลุ่มลึกและเย้ายวนใจในทุกครั้งที่ขยับตัว</p>
+            <span class="mood-card__more">ดูสินค้า</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">Body Scent</span>
+      <p>กลิ่นหอมที่ออกแบบมาเพื่อทุกจังหวะของวัน</p>
+      <p class="copy">&copy; 2026 Body Scent. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
